@@ -19,5 +19,28 @@ namespace AppEjerciciosBucles.Funcioens
             }
             return cad.ToString();
         }
+        public static long factorial(int num)
+        {
+            int i = 0;
+            long fac = 1;
+            if (num == 1 || num == 0)
+                return 1;
+            do
+            {
+                i++;
+                fac = fac * i;
+
+            } while (i<num);return fac;
+        }
+        public static long notas(int num)
+        {
+            Random r = new Random();
+            for (int i = 20; i >= 50; i++)
+            {
+                 num = r.Next(20, 50);
+                
+            }
+            return num;
+        }
     }
 }
